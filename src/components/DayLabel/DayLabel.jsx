@@ -3,8 +3,13 @@ import './DayLabel.css'
 export default function DayLabel({ dayType, key }) {
         
     function selectDay() {
-        dayType.setBold([0,1,0,1])
+        let boldVals = [0,0,0,0]
+        dayType.setBold(boldVals)
+        boldVals[dayType.key] = 1
+        dayType.setBold(boldVals)
+
     }
+    console.log(key)
 
   return (
     <>
