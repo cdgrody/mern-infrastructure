@@ -8,8 +8,8 @@ export default function DayLabel({ dayType, key }) {
         boldVals[dayType.key] = 1
         dayType.setBold(boldVals)
 
+        dayType.setColor(dayType.color)
     }
-    console.log(key)
 
   return (
     <>

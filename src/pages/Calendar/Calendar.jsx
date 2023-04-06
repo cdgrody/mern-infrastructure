@@ -5,6 +5,7 @@ import "./Calendar.css";
 
 export default function Calendar() {
   const [daySelector, setDaySeclector] = useState([0,0,0,0]);
+  const [color, setColor] = useState('')
 
   const days = [
     {
@@ -33,10 +34,10 @@ export default function Calendar() {
   // The following creates an array of numbers from [1..28]
   const dates = Array.from({ length: 28 }, (x, i) => i + 1);
   const dayTypes = [
-    { key: 0, day: "Holiday", color: "yellow", bold: daySelector[0], setBold: setDaySeclector },
-    { key: 1, day: "Work", color: "blue", bold: daySelector[1], setBold: setDaySeclector },
-    { key: 2, day: "Errands", color: "green", bold: daySelector[2], setBold: setDaySeclector },
-    { key: 3, day: "Sick", color: "red", bold: daySelector[3], setBold: setDaySeclector },
+    { key: 0, day: "Holiday", color: "yellow", bold: daySelector[0], setBold: setDaySeclector, setColor: setColor },
+    { key: 1, day: "Work", color: "blue", bold: daySelector[1], setBold: setDaySeclector, setColor: setColor  },
+    { key: 2, day: "Errands", color: "green", bold: daySelector[2], setBold: setDaySeclector, setColor: setColor  },
+    { key: 3, day: "Sick", color: "red", bold: daySelector[3], setBold: setDaySeclector, setColor: setColor  },
   ];
 
   // Creates an Array of Dates
