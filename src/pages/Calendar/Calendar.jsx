@@ -29,7 +29,12 @@ export default function Calendar() {
 
   // The following creates an array of numbers from [1..28]
   const dates = Array.from({ length: 28 }, (x, i) => i + 1);
-  const dayTypes = ['Holiday', 'Work', 'Errands', 'Sick']
+  const dayTypes = [
+    {day: 'Holiday', color: 'yellow'}, 
+    {day: 'Work', color: 'blue'}, 
+    {day: 'Errands', color: 'green'}, 
+    {day: 'Sick', color: 'red'}
+]
 
   // Creates an Array of Dates
   const dateObjs = dates.map(
@@ -43,7 +48,9 @@ export default function Calendar() {
           <h1>React Calendar</h1>
         </div>
         <div className="day-label">
-            <DayLabel />
+            {dayTypes.map((dayType, idx) => (
+            <DayLabel dayType={dayType} key={idx} />
+            ))}
         </div>
         <div className="day-card-list">
           {dateObjs.map((dateObj, idx) => (

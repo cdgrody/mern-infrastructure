@@ -1,0 +1,28 @@
+.day-label-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22%;
+    color: white;
+    align-self: center;
+    height: 80%;
+    font-weight: 900;
+    border: solid black;
+    border-radius: 10px;
+}
+
+#yellow {
+    background: rgb(231, 231, 39);
+}
+
+#blue {
+    background: blue;
+}
+
+#green {
+    background: green;
+}
+
+#red {
+    background: red;
+}
