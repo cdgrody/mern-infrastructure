@@ -1,3 +1,5 @@
+import DayCard from "../../components/DayCard/DayCard";
+
 export default function Calendar() {
   const days = [
     {
@@ -35,6 +37,11 @@ export default function Calendar() {
     <>
       <div className="App">
         <h1>React Calendar</h1>
+        <div className="day-card-list">
+          {dateObjs.map((dateObj, idx) => (
+            <DayCard dateObj={dateObj} key={idx} />
+          ))}
+        </div>
       </div>
     </>
   );
