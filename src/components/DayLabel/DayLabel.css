@@ -1,14 +1,24 @@
-.day-label-card {
+.day-label-card, .day-label-card-bold {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 22%;
     color: white;
     align-self: center;
+    font-size: 24px;
     height: 80%;
     font-weight: 900;
     border: solid black;
+    cursor: pointer;
     border-radius: 10px;
+}
+
+.day-label-card:hover {
+    border: solid black 5px;
+}
+
+.day-label-card-bold {
+    box-shadow: black 5px 5px 5px;
 }
 
 #yellow {
