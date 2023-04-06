@@ -1,0 +1,12 @@
+.day-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(255, 98, 0);
+    width: 12.5%;
+    height: 20%;
+    margin: 2px;
+    color: white;
+    border: solid black;
+    border-radius: 10px;
+}
