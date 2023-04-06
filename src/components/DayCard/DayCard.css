@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: rgb(255, 98, 0);
     width: 12.5%;
     height: 20%;
     margin: 2px;
@@ -10,4 +9,29 @@
     border: solid black;
     border-radius: 10px;
     font-weight: 900;
+    cursor: pointer;
+}
+
+.day-card:hover {
+    border: solid black 4px;
+}
+
+#orange {
+    background-color: rgb(255, 98, 0);
+}
+
+#yellow {
+    background: rgb(231, 231, 39);
+}
+
+#blue {
+    background: blue;
+}
+
+#green {
+    background: green;
+}
+
+#red {
+    background: red;
 }

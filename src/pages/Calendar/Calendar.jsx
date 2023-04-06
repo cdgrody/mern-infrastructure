@@ -5,7 +5,7 @@ import "./Calendar.css";
 
 export default function Calendar() {
   const [daySelector, setDaySeclector] = useState([0,0,0,0]);
-  const [color, setColor] = useState('')
+  const [color, setColor] = useState('orange')
 
   const days = [
     {
@@ -42,7 +42,7 @@ export default function Calendar() {
 
   // Creates an Array of Dates
   const dateObjs = dates.map(
-    (date, key) => (date = { day: days[key % 7].name, idx: key + 1 })
+    (date, key) => (date = { day: days[key % 7].name, idx: key + 1, dayColor: 'orange', colorState: color })
   );
 
   return (
